@@ -25,17 +25,23 @@ npm start
 
 ## Deployment
 
-### Vercel (Recommended — Free)
-```bash
-npm i -g vercel
-vercel
-```
+### Vercel
+1. Import this repo in Vercel.
+2. Set **Project Name** to `brajendra-portfolio` (or your preferred brand slug).
+3. Add env var: `NEXT_PUBLIC_SITE_URL=https://<your-vercel-domain>`.
+4. Deploy.
 
 ### Netlify
-```bash
-npm run build
-# Upload the `.next` folder to Netlify
-```
+1. Import this repo in Netlify.
+2. Build command: `npm run build`
+3. Plugin auto-enabled via `netlify.toml` (`@netlify/plugin-nextjs`).
+4. Set env var: `NEXT_PUBLIC_SITE_URL=https://<your-netlify-domain>`.
+5. Deploy.
+
+### Keep URL branded (no random-looking public URL)
+- Set site/project name explicitly in Vercel and Netlify dashboards.
+- Add a custom domain (recommended) and make it primary.
+- Disable Deploy Previews/Branch Deploys in dashboard if you do not want preview URLs.
 
 ## Sections
 1. **Hero** — Name, title, availability badge, key stats

@@ -1,0 +1,11 @@
+[build]
+  command = "npm run build"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
+
+[build.environment]
+  NEXT_TELEMETRY_DISABLED = "1"
+
+[context.production.environment]
+  NEXT_PUBLIC_SITE_URL = "https://brajendra-portfolio.netlify.app"

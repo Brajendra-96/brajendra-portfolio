@@ -2,9 +2,13 @@
   "name": "brajendra-portfolio",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": ">=20 <23"
+  },
   "scripts": {
     "dev": "next dev -p 3000",
     "dev:clean": "rm -rf .next && next dev -p 3000",
+    "dev:force": "sh -c 'lsof -ti tcp:3000 | xargs kill -9 2>/dev/null || true; rm -rf .next node_modules/.cache; next dev -p 3000'",
     "build": "next build",
     "start": "next start -p 3000"
   },
