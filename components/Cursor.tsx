@@ -6,12 +6,16 @@ export default function Cursor() {
   const followerRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
+    const isTouch = window.matchMedia('(hover: none)').matches
+    if (isTouch) return
+
     const cursor = cursorRef.current
     const follower = followerRef.current
     if (!cursor || !follower) return
 
     let mouseX = 0, mouseY = 0
     let followerX = 0, followerY = 0
+    let rafId = 0
 
     const move = (e: MouseEvent) => {
       mouseX = e.clientX
@@ -25,14 +29,15 @@ export default function Cursor() {
       followerY += (mouseY - followerY) * 0.12
       follower.style.left = followerX + 'px'
       follower.style.top = followerY + 'px'
-      requestAnimationFrame(animate)
+      rafId = requestAnimationFrame(animate)
     }
 
     const onEnter = () => { cursor.classList.add('hover'); follower.classList.add('hover') }
     const onLeave = () => { cursor.classList.remove('hover'); follower.classList.remove('hover') }
+    const hoverTargets = document.querySelectorAll('a, button, [data-hover]')
 
     document.addEventListener('mousemove', move)
-    document.querySelectorAll('a, button, [data-hover]').forEach(el => {
+    hoverTargets.forEach(el => {
       el.addEventListener('mouseenter', onEnter)
       el.addEventListener('mouseleave', onLeave)
     })
@@ -41,6 +46,11 @@ export default function Cursor() {
 
     return () => {
       document.removeEventListener('mousemove', move)
+      hoverTargets.forEach(el => {
+        el.removeEventListener('mouseenter', onEnter)
+        el.removeEventListener('mouseleave', onLeave)
+      })
+      cancelAnimationFrame(rafId)
     }
   }, [])
 

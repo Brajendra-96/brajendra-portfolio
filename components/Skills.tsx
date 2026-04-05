@@ -7,7 +7,7 @@ const skills = [
   {
     icon: '🎨',
     name: 'UI Frameworks',
-    tags: ['React', 'Angular Material', 'Bootstrap', 'MUI'],
+    tags: ['React', 'Next.js', 'Angular Material', 'Bootstrap', 'MUI'],
   },
   {
     icon: '🔄',

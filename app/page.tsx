@@ -23,8 +23,8 @@ export default function Home() {
         <Contact />
       </main>
       <footer>
-        <p>© 2025 Brajendra Kumar. Crafted with precision.</p>
-        <p>Available for opportunities — Noida, India</p>
+        <p>© 2026 Brajendra Kumar. Crafted with precision.</p>
+        <p>Available for opportunities</p>
       </footer>
     </>
   )

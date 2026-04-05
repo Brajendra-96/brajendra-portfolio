@@ -14,8 +14,8 @@ const projects = [
   {
     num: '02',
     company: 'ITPROFOUND',
-    title: 'OPUS — Restaurant OS',
-    desc: 'Full-featured restaurant management system with KOT (Kitchen Order Ticket) management, reservation workflows, and multi-gateway payment integration (Stripe, Cashfree, Razorpay). Built to eliminate operational chaos in busy restaurant environments.',
+    title: 'OPUS24 & Dineazy — Hospitality OS',
+    desc: 'A full-featured hospitality platform with KOT (Kitchen Order Ticket) flow, reservation workflows, and multi-gateway payment integrations (Stripe, Cashfree, Razorpay). Built to reduce operational chaos in busy restaurants and hotels.',
     metrics: [
       { val: '20%', label: 'Faster Order Time' },
       { val: '15%', label: 'Better Reservations' },

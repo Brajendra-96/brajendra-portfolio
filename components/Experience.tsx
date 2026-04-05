@@ -8,11 +8,11 @@ const experiences = [
     period: 'Apr 2024 – Present',
     location: 'Noida, India',
     points: [
-      'Led a high-performing frontend team building scalable, high-availability features for Moglix\'s B2B e-commerce platform — serving thousands of enterprise buyers.',
-      'Directed end-to-end delivery of 10+ major features annually: from sprint planning to deployment, consistently on time and above quality benchmarks.',
-      'Authored technical documentation that cut new developer onboarding time by 50%, accelerating team velocity.',
-      'Implemented advanced frontend performance strategies — achieving 30% improvement in page load times across 50+ device and browser configurations.',
-      'Collaborated across product, design, QA, and backend teams to ship user-centric features that measurably improved customer satisfaction.',
+      'Led a high-performing frontend team that built scalable, high-availability features for Moglix\'s B2B e-commerce platform, serving thousands of enterprise buyers.',
+      'Directed end-to-end delivery of 20+ production releases annually, covering major features, workflow enhancements, and compliance updates from sprint planning through deployment.',
+      'Authored technical documentation that reduced new-developer onboarding time by 50%, accelerating team velocity.',
+      'Implemented advanced frontend performance strategies, improving page load time by 30% across 50+ device and browser combinations.',
+      'Collaborated with product, design, QA, and backend teams to ship user-centric features that measurably improved customer satisfaction.',
     ],
   },
   {
@@ -21,11 +21,11 @@ const experiences = [
     period: 'Nov 2021 – Aug 2023',
     location: 'Hyderabad, India',
     points: [
-      'Led full frontend lifecycle for OPUS24 (restaurant management) and Dineazy platforms — from requirement analysis through UI architecture and delivery.',
-      'Leveraged AWS (S3, CloudFront) to deploy and optimize scalable cloud-native frontend infrastructure.',
-      'Built critical modules — booking systems, folio management, rate card features — achieving 40% gain in development efficiency via reusable component architecture.',
-      'Engineered responsive, accessible UIs in React that elevated user engagement across diverse devices and screen sizes.',
-      'Maintained a 98% sprint milestone adherence rate using Agile methodology, contributing to defect rates below 1%.',
+      'Led the complete frontend lifecycle for OPUS24 (restaurant operations) and Dineazy, from requirements analysis to UI architecture and production delivery.',
+      'Used AWS (S3, CloudFront) to deploy and optimize scalable, cloud-native frontend infrastructure.',
+      'Built core modules including table booking, folio management, and rate-card workflows, delivering 40% faster development through reusable components.',
+      'Engineered responsive, accessible React interfaces that improved usability across phones, tablets, and desktop screens.',
+      'Maintained 98% sprint milestone adherence using Agile practices, helping keep post-release defects below 1% across continuous multi-module rollouts.',
     ],
   },
 ]

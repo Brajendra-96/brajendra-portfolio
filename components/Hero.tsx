@@ -1,4 +1,11 @@
 export default function Hero() {
+  const scrollToSection = (id: string) => {
+    const el = document.getElementById(id)
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth', block: 'start' })
+    }
+  }
+
   return (
     <section className="hero" id="hero">
       <div className="hero-grid-bg" />
@@ -18,13 +25,31 @@ export default function Hero() {
       </h1>
 
       <p className="hero-title">
-        <strong>Angular · React · TypeScript</strong> — Building B2B platforms at scale.<br />
-        4+ years turning complex problems into elegant interfaces.
+        <strong>Angular · React · Next.js · TypeScript</strong> — Building B2B platforms at scale.<br />
+        6+ years delivering reliable, high-impact frontend systems for enterprise teams.
       </p>
 
       <div className="hero-cta">
-        <a href="#projects" className="btn-primary">View My Work</a>
-        <a href="#contact" className="btn-secondary">Get In Touch</a>
+        <a
+          href="#projects"
+          className="btn-primary"
+          onClick={(e) => {
+            e.preventDefault()
+            scrollToSection('projects')
+          }}
+        >
+          View My Work
+        </a>
+        <a
+          href="#contact"
+          className="btn-secondary"
+          onClick={(e) => {
+            e.preventDefault()
+            scrollToSection('contact')
+          }}
+        >
+          Get In Touch
+        </a>
       </div>
 
       <div className="hero-scroll">
@@ -34,16 +59,16 @@ export default function Hero() {
 
       <div className="hero-stats">
         <div className="stat">
-          <div className="stat-num">10<span>+</span></div>
-          <div className="stat-label">Major Features Shipped</div>
+          <div className="stat-num">45<span>+</span></div>
+          <div className="stat-label">Production Deliveries</div>
         </div>
         <div className="stat">
           <div className="stat-num">30<span>%</span></div>
           <div className="stat-label">Perf. Improvement</div>
         </div>
         <div className="stat">
-          <div className="stat-num">4<span>yr</span></div>
-          <div className="stat-label">Industry Experience</div>
+          <div className="stat-num">6<span>+</span></div>
+          <div className="stat-label">Years of Experience</div>
         </div>
       </div>
     </section>

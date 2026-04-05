@@ -6,9 +6,13 @@ export default function About() {
         <div className="about-text">
           <h2 className="section-title">Crafting <em>experiences</em>,<br />not just interfaces.</h2>
           <p>
-            I&apos;m a <strong>Senior Frontend Engineer</strong> with 4+ years of experience building production-grade
-            web applications that serve millions of users. Currently leading frontend development
+            I&apos;m a <strong>Senior Frontend Engineer</strong> with 6+ years of experience building production-grade
+            web applications that serve large-scale B2B users. Currently leading frontend development
             at <strong>Moglix</strong> — one of India&apos;s largest B2B e-commerce platforms.
+          </p>
+          <p>
+            My delivery metrics reflect end-to-end production work across multiple products, including
+            major launches, iterative feature rollouts, performance improvements, and stability-focused releases.
           </p>
           <p>
             My craft sits at the intersection of <strong>engineering rigor and design sensibility</strong>.
